@@ -19,7 +19,7 @@ const houseSchema = new mongoose.Schema({
     name: String,
     size: Number,
     colors: [Number],
-    gridPieces: [[[Number]]],
+    gridPieces: [[Number]],
     coordinates: [Number]
 });
 const House = mongoose.model('House', houseSchema);
