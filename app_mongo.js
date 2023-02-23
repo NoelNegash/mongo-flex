@@ -117,7 +117,7 @@ async function main() {
         res.send(JSON.stringify(houses))
     })
     
-    app.get('/similar-houses', async (req, res) => {
+    app.post('/similar-houses', async (req, res) => {
         if (req.body == undefined) req.body = {}
         var houses = await similarHouses(req.body)
         res.send(JSON.stringify(houses));
